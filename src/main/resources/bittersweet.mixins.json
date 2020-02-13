@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "xyz.ethanh.bittersweet.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "MixinClientWorld",
+    "MixinMinecraftClient"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "bittersweet",
+  "version": "${version}",
+
+  "name": "Bittersweet",
+  "description": "I was bored",
+  "authors": [
+    "DiscordGod aka TheUPSTruck"
+  ],
+
+  "license": "CC0-1.0",
+  "icon": "assets/bittersweet/image/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.ethanh.bittersweet.BitterSweet"
+    ],
+    "client": [
+      "xyz.ethanh.bittersweet.BitterSweetClient"
+    ]
+  },
+  "mixins": [
+    "bittersweet.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.16-alpha.20.6.a"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
