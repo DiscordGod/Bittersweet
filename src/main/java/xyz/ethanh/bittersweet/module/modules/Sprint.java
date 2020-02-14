@@ -11,7 +11,9 @@ public class Sprint extends Module {
     }
 
     public void playerTick() {
-        mc.player.setSprinting(true);
+        if(mc.player.getHungerManager().getFoodLevel() > 6.0F) {
+            mc.player.setSprinting(true);
+        }
     }
 
     public void onEnable() {
