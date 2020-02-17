@@ -62,7 +62,7 @@ public class BitterSweetConfig {
             this.armorStatusToggled = armorStatusToggled;
         }
 
-        public boolean isArmorStatusToggled1() {
+        public boolean isArmorStatusToggled() {
             return armorStatusToggled;
         }
 

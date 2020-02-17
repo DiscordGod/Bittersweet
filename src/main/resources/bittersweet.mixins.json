@@ -6,7 +6,9 @@
   ],
   "client": [
     "MixinClientWorld",
-    "MixinMinecraftClient"
+    "MixinMinecraftClient",
+    "MixinGameRenderer",
+    "MixinMouseClick"
   ],
   "injectors": {
     "defaultRequire": 1

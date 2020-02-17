@@ -11,8 +11,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin({GameRenderer.class})
 public class MixinGameRenderer {
-  @Inject(method={"render"}, slice={@Slice(from=@At(value="INVOKE", target="Lnet/minecraft/client/gui/hud/InGameHud;draw(F)V"))}, at={@At(value="INVOKE", ordinal=0)})
-  private void renderOverlay(float var1, long nanoTime, boolean var4, CallbackInfo callbackInfo) {
+  @Inject(method = "render", slice = @Slice(from = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/hud/InGameHud;render(F)V")), at = @At(value = "INVOKE", ordinal = 0))
+  private void renderOverlay(float tickDelta, long startTime, boolean tick, CallbackInfo callbackInfo) {
     Event.uiRenderer.draw();
   }
 }

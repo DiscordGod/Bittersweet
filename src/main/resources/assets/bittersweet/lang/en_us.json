@@ -1,4 +1,10 @@
 {
     "key.bittersweet.category" : "Bittersweet",
-    "key.bittersweet.sprint": "Sprint"
+    "key.bittersweet.sprint": "Sprint",
+    "key.bittersweet.fullbright": "Fullbright",
+    "key.bittersweet.fly": "Fly",
+    "key.bittersweet.nofall": "Negate Fall Damage",
+    "key.bittersweet.coords": "Coords",
+    "key.bittersweet.keys": "Keys",
+    "key.bittersweet.armorstatus": "Armor Status"
 }
